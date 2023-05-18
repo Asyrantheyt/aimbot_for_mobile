@@ -37,6 +37,8 @@ function getclosest()
                 cloplr = v
             end
         end
+        else
+        cloplr = v
     end
     return cloplr
 end
