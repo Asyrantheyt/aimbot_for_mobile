@@ -30,8 +30,7 @@ function getclosest()
     local clodis = math.huge
     local cloplr
     for i,v in pairs(game:GetService("Players"):GetChildren()) do
-        if v ~= game:GetService("Players").LocalPlayer and v.TeamColor ~= game:GetService("Players").LocalPlayer.TeamColor then
-        repeat game:GetService("RunService").RenderStepped:Wait() until v.Character:FindFirstChild("HumanoidRootPart")
+        if v ~= game:GetService("Players").LocalPlayer and v.TeamColor ~= game:GetService("Players").LocalPlayer.TeamColor and v.Character:FindFirstChild("HumanoidRootPart") then
             local distance = (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude
             if distance < clodis then
                 clodis = distance
