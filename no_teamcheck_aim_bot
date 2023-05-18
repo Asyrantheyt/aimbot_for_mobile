@@ -1,6 +1,10 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+if game:GetService("CoreGui"):FindFirstChild("Oen Rayfiled") then
+ game:GetService("CoreGui")["Oen Rayfiled"]:Destory()
+end
 
 local a = Instance.new("ScreenGui")
+a.Name = "Oen Rayfiled"
 a.Parent = game:GetService("CoreGui")
 local b = Instance.new("TextButton")
 b.Text = "Open/Close Gui"
