@@ -36,9 +36,9 @@ function getclosest()
                 clodis = distance
                 cloplr = v
             end
-        end
-        else
+            else
         cloplr = v
+        end
     end
     return cloplr
 end
