@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 if game:GetService("CoreGui"):FindFirstChild("Oen Rayfiled") then
- game:GetService("CoreGui")["Oen Rayfiled"]:Destory()
+ game:GetService("CoreGui")["Oen Rayfiled"].Parent = game
 end
 
 local a = Instance.new("ScreenGui")
