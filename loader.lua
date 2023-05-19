@@ -76,7 +76,16 @@ end
 coroutine.wrap(ZILTY_fake_script)()
 local function FSNE_fake_script() -- nil. 
 	local script = Instance.new('LocalScript', okButton)
-	script.Parent.MouseButton1Click:Connect(function() script.Parent.Parent.Parent.Enabled = false local ok, sus = pcall(function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/aimbot"),true))() end) if sus then print("Studio cannot load 'https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/aimbot'") warn(sus) end end)
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.Enabled = false;
+	local ok, sus = pcall(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/aimbot", true))();
+	end);
+	if sus then
+		print("Studio cannot load 'https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/aimbot'");
+		warn(sus);
+		end
+	end);
 end
 coroutine.wrap(FSNE_fake_script)()
 local function GHSA_fake_script()
