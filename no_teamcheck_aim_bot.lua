@@ -36,8 +36,6 @@ function getclosest()
                 clodis = distance
                 cloplr = v
             end
-            else
-        cloplr = v
         end
     end
     return cloplr
@@ -82,7 +80,7 @@ MainTab:CreateToggle({
         while wait() and _G.aim == true do
             _G.aim = Value
             local camera = game:GetService("Workspace").CurrentCamera
-            if getclosest().Character:FindFirstChild("Head") then
+            if getclosest().ClassName == "Player" and getclosest().Character:FindFirstChild("Head") then
                 camera.CFrame = CFrame.new(camera.CFrame.Position, getclosest().Character.Head.Position)
                 if _G.aim == false then break end
             end
