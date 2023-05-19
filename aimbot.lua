@@ -37,7 +37,7 @@ function getclosest()
                 cloplr = v
             end
            else
-        cloplr = v
+        cloplr = nil
         end
     end
     return cloplr
