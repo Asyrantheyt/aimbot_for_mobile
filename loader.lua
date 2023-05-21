@@ -115,7 +115,7 @@ local function FSNE_fake_script() -- nil.
 	script.Parent.MouseButton1Click:Connect(function() 
 		script.Parent.Parent.Parent.Enabled = false 
 		local ok, sus = pcall(function() 
-			loadstring(game:HttpGet(("https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/aimbot"),true))() 
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/aimbot"))() 
 		end) 
 		if sus 
 		then 
@@ -130,7 +130,7 @@ local function GHSA_fake_script()
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Enabled = false
 		local ok, sus = pcall(function()
-			loadstring(game:HttpGet(("https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/no_teamcheck_aim_bot"),true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/no_teamcheck_aim_bot"))()
 		end)
 		if sus then
 			print("Studio cannot load 'https://raw.githubusercontent.com/Asyrantheyt/aimbot_for_mobile/main/no_teamcheck_aim_bot'")
