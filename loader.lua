@@ -99,7 +99,7 @@ local function KADM_fake_script()
 		end
 	end)
 	uis.InputChanged:Connect(function(input)
-		if input == draginput and dragging then
+		if input == draginput and dragging and gui.Visible then
 			update(input)
 		end
 	end)
